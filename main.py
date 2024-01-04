@@ -81,6 +81,6 @@ if __name__=='__main__':
     # Once the BIPED datset is downloaded, put the localization of the dataset
     # for example if the data is in /home/user_name/datasets/BIPED
     #  put "/home/user_name/datasets"
-    BIPED_main_dir ="/home/user_name/datasets"
+    BIPED_main_dir ="/data/BIPEDv2"
 
     main(dataset_dir=BIPED_main_dir)
