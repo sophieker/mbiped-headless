@@ -545,8 +545,8 @@ def flip_data(data_dir, augment_both=True):
                 cv.imwrite(os.path.join(save_dir_gt, GT_list[j]), flip_gt)
                 tmp_imgs = np.concatenate((flip_x, flip_gt), axis=1)
 
-            cv.imshow('Flipping data',tmp_imgs)
-            cv.waitKey(300)
+            # cv.imshow('Flipping data',tmp_imgs)
+            # cv.waitKey(300)
 
         print("End flipping file in {}".format(os.path.join(X_dir, i)))
 
