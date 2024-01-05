@@ -11,11 +11,11 @@ import cv2 as cv
 
 from data_augmentation import augment_data
 
-def cv_imshow(img,title='image'):
-    print(img.shape)
-    cv.imshow(title,img)
-    cv.waitKey(0)
-    cv.destroyAllWindows()
+# def cv_imshow(img,title='image'):
+#     print(img.shape)
+#     cv.imshow(title,img)
+#     cv.waitKey(0)
+#     cv.destroyAllWindows()
 
 def list_data(base_dirs=None,data_name="BIPED", simple_list=False):
     # list BIPED augmented data in a .lst file
@@ -62,8 +62,8 @@ def list_data(base_dirs=None,data_name="BIPED", simple_list=False):
     tmp_files = recov_data[15]
     img = cv.imread(os.path.join(save_file, tmp_files[0]))
     gt = cv.imread(os.path.join(save_file, tmp_files[1]))
-    cv_imshow(img, 'rgb image')
-    cv_imshow(gt, 'gt image')
+    # cv_imshow(img, 'rgb image')
+    # cv_imshow(gt, 'gt image')
 
 def main(dataset_dir):
 
